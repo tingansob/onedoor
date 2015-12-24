@@ -1,0 +1,24 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$site_fonts: "FreeSans";
+$dark: #383D3B;
+$banner_font: "Arial Black";
+$accent: #52DEE5;
+
+body {
+  font-family:  $site_fonts;
+  color: $dark;
+}
+.welcomeBox {
+	border:1px solid $accent;
+  
+}
+.hello-world {
+	font-family: $banner_font;
+	font-size:10em;
+	color: $accent;
+	padding-bottom:10px;
+	border:1px dotted $dark;
+	text-align:center;
+}
