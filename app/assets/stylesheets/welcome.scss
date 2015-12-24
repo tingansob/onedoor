@@ -1,24 +1,60 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-$site_fonts: "FreeSans";
-$dark: #383D3B;
+// elements with an _ underscore reference text elements
+// elements with camelCase reference block elements
+
+$site_fonts: "FreeSans", "Ubuntu";
 $banner_font: "Arial Black";
+
 $accent: #52DEE5;
+$highlight: #52DCE5;
+$light: #EEE5E9;
+$medium: #7C7C7C;
+$dark: #383D3B;
+$shadow: rgba(25,25,25,0.8);
+$thefloor: #f1f1f1;
+
+$boxBorders: 1px solid $dark;
+$accentBorders: 1px solid $highlight;
 
 body {
   font-family:  $site_fonts;
   color: $dark;
+  font-size: 100%;
+  background-color: $light;
 }
-.welcomeBox {
-	border:1px solid $accent;
-  
+
+// Site Navigation
+.navbar {
+	border:$accentBorders;
+	background: $thefloor;
 }
-.hello-world {
+.navbar-brand {
+	color: $highlight;
 	font-family: $banner_font;
-	font-size:10em;
-	color: $accent;
-	padding-bottom:10px;
-	border:1px dotted $dark;
+}
+// Welcome box
+.welcomeBox {
+	border:$accentBorders;
+	max-width:65em;
+	background: $thefloor;
+}
+
+// Hello World Text
+.hello-world {
+	color: #fff;
+	font-family: $banner_font;
+	font-size:7em;
+	line-height:.85;
+	margin-top: .75em;
+	margin-bottom: .75em;
 	text-align:center;
+	text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+}
+
+// test box
+.irusty {
+	border:1px solid red;
+	background-color:yellow;
 }
